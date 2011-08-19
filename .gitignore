@@ -1,0 +1,15 @@
+*
+!.gitignore
+!poj/
+!aoj/
+!gcj/
+!gcj/*/
+!gcj/*/*/
+!codeforces/
+!codeforces/*/
+!*.c
+!*.cpp
+!*.java
+!*.rb
+!*.py
+!*.pl
