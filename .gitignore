@@ -8,6 +8,8 @@
 !gcj/*/*/
 !codeforces/
 !codeforces/*/
+!sony/
+!sony/*/
 !*.c
 !*.cpp
 !*.java
