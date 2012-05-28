@@ -30,12 +30,12 @@ int maze[5][5];
 set<string> st;
 int dx[] = {-1,1,0,0}, dy[] = {0,0,1,-1};
 
-void dfs(int x, int y, int n, string s) {
+void dfs(int x, int y, int n, char *s) {
   if (n == 6) {
-    st.insert(s);
+    st.insert(string(s));
     return;
   }
-  s += (char)('0'+maze[x][y]);
+  s[n] = (char)('0'+maze[x][y]);
   REP(i, 4) {
     int nx = x+dx[i], ny = y+dy[i];
     if (0 <= nx && nx < 5 && 0 <= ny && ny < 5)
@@ -48,7 +48,9 @@ int main(int argc, char *argv[]) {
   ios::sync_with_stdio(false);
 
   REP(i, 5) REP(j, 5) scanf("%d", &maze[i][j]);
-  REP(i, 5) REP(j, 5) dfs(i,j,0,"");
+  char s[7];
+  s[6] = '\0';
+  REP(i, 5) REP(j, 5) dfs(i,j,0,s);
   printf("%d\n", (int)st.size());
   return 0;
 }
