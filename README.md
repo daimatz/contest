@@ -5,4 +5,4 @@ Source Codes for Programming Contest
 - AtCoder <http://atcoder.jp/>
 - Codeforces <http://codeforces.com/>
 - Google Code Jam, GCJ <http://code.google.com/codejam/>
-- PKU JudgeOnline <http://poj.org/>
+- PKU JudgeOnline, POJ <http://poj.org/>
